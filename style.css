@@ -94,11 +94,12 @@ a{
 }
 
 .faded-text{
+    position: absolute;
     user-select: none;
     font-size: 7em;
     color: rgb(231, 231, 231);
     bottom: -16%;
-    left: -5%;
+    left: 6%;
     font-weight: bold;
     transition: all 3s;
 }
@@ -216,4 +217,90 @@ font-weight: 500;
 
 }
 
+}
+
+.icon-cube{
+    z-index: 9;
+    top: 0.8em;
+    right: 1em;
+    animation-name: cuberotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes cuberotate{
+    0%{
+        transform: translateY(0) rotateY(0deg);;
+         
+    }
+    50%{
+        transform: translateY(-15px) rotateY(180deg);
+    }
+    
+    100%{
+        transform: translateY(0px) rotateY(360deg);
+    
+    }
+}
+
+.icon-circle{
+
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    animation-name: shakeeffect;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes shakeeffect{
+    0%{
+        left: 0;
+        bottom: 0;         
+    }
+    50%{
+        left: 5%;
+        bottom: 8%;
+    }   
+}
+
+.icon-zigzag{
+    z-index: 9;
+    top: 1.5em;
+    left: -0.3em;
+    animation-name: zigzagffect;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes zigzagffect{
+    
+    50%{
+        top: 2%;
+        left: 5%;
+    }   
+}
+
+
+.icon-plus{
+    z-index: 9;
+    top: -0.8rem;
+    left: 50%;
+    animation-name: shakeeffectplus;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count:infinite;
+}
+
+@keyframes shakeeffectplus{
+    
+    50%{
+        top: 3%;
+        left: 40%;
+    }   
 }
