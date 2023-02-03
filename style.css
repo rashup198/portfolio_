@@ -2,7 +2,7 @@
 padding: 0;
 margin: 0;
 box-sizing: border-box;
-font-family: 'Balsamiq Sans', sans-serif;
+font-family:  'sans-serif', 'Balsamiq Sans';
 
 scroll-behavior: smooth;
 }
@@ -78,4 +78,142 @@ a{
 .nav-items div:hover{
     transition: all 0.8s;
     font-weight: bold;
+}
+
+
+.hero-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap:5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+}
+
+.faded-text{
+    user-select: none;
+    font-size: 7em;
+    color: rgb(231, 231, 231);
+    bottom: -16%;
+    left: -5%;
+    font-weight: bold;
+    transition: all 3s;
+}
+
+.hero-section-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero-section-heading{
+font-size: 35px;
+color:#343d68;
+font-weight: 500;
+
+}
+
+.role{
+    color: #4e45d5;
+    font-weight: 800;
+}
+
+
+.hero-section-subheading{
+
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.hero-section-discription{
+
+    margin-top:1rem;
+    width: 70%;
+    font-weight: 500;
+}
+
+#btn{
+    position: relative;
+    border-radius: 10px;
+   width: 150px;
+   color: black;
+   background-color: red;
+   font-size: 25px;
+   text-align: center;
+   box-shadow: 2px 2px 2px black;
+}
+
+#btn:hover{    
+   color: black;
+   background-color: rgb(222, 81, 81);
+}
+
+.hero-section-right{
+    position: relative;
+    margin-right: 4rem;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.user-image{
+    padding: 2.0rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: scaleImage 5s linear infinite;
+
+}
+
+.user-image{
+    z-index:-9;
+}
+
+@keyframes scaleImage{
+
+0%{
+    filter: grayscale(0);
+    transform: scale(1);
+}
+
+50%{
+    transform: scale(1.1);
+    filter: grayscale(1);
+    box-shadow: 3px 3px 10px black;
+}
+
+100%{
+    transform: scale(1);
+    filter: grayscale(0);
+}
+
+}
+
+
+.icon-dots{
+    z-index:9;
+    bottom: -1rem;
+    right: 0;
+    animation-name: dotanimation ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dotanimation{
+0%{
+    transform: translateY(0);
+}
+50%{
+    transform: translateY(-15px);
+}
+
+100%{
+    transform: translateY(0px);
+
+}
+
 }
