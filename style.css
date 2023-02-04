@@ -98,7 +98,7 @@ a{
     user-select: none;
     font-size: 7em;
     color: rgb(231, 231, 231);
-    bottom: -16%;
+    bottom: -17%;
     left: 6%;
     font-weight: bold;
     transition: all 3s;
@@ -303,4 +303,40 @@ font-weight: 500;
         top: 3%;
         left: 40%;
     }   
+}
+
+/* styling the project section */
+
+
+.project-section{
+    background-color: rgb(231, 231, 231);
+    
+    margin: 4rem;
+    
+}
+.page-header{
+    color: rgb(255, 98, 0);
+    font-size: 90px;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+
+.project-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap:120px;
+
+}
+
+.project-card{
+    width: 90%;
+    height: 550px;
+    background-image: url(images/projects/Project1.png);
+
+
 }
