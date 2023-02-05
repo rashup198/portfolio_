@@ -484,4 +484,82 @@ background: url(images/projects/Project1.png) no-repeat center center/cover;
             background: url(images/projects/Project4.png)no-repeat center center/cover;
 }
 
+.skills-container{
+    position: relative;
+    display: flex;
+    padding: 5rem;
+    margin: 10rem auto;
+    gap: 30px;
+}
 
+.skill-container-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skill-container-right{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.skill-fade-text{
+
+    position: absolute;
+    font-size: 13em;
+    font-style: bold;
+    color: rgb(231, 231, 231);
+    bottom: -34.5%;
+    right: -12%;
+    user-select: none;
+    overflow-y: hidden;
+
+}
+.blob-style{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-20%  -20%);
+    animation: blobanimate 5s linear infinite;
+    z-index: -5;
+}
+
+@keyframes blobanimate{
+    50%{
+        top: 30%;
+        left:30%;
+    }
+}
+
+
+.skills-logo{
+    width: 90px;
+    transition:all 0.3s ;
+
+}
+
+.skills-logo:hover{
+    transform: scale(1.2);
+
+}
+
+.skill-heading{
+    font-size: 50px;
+    font-style: bold;
+    color: orangered;
+    line-height: 50px;
+}
+.caps{
+    font-size: 90px;
+}
+
+.skill-subheading{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: justify;
+}
